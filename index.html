@@ -16,17 +16,16 @@
             margin: 0; 
             color: var(--navy); 
             background: var(--mint);
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='10' y='50' font-family='Bungee' font-size='20' fill='%231800ad' fill-opacity='0.05'%3E67%3C/text%3E%3C/svg%3E");
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
 
-        /* Floating 67s Animation */
+        /* Floating 67 Stickers */
         .floating-67 {
             position: absolute;
             font-family: 'Bungee', cursive;
             color: var(--pink);
-            opacity: 0.3;
+            opacity: 0.2;
             z-index: 0;
             user-select: none;
             pointer-events: none;
@@ -77,15 +76,15 @@
             z-index: 1;
         }
 
-        /* Hidden 67 in the corner of cards */
+        /* Subtle 67 inside cards */
         .card::after {
             content: '67';
             position: absolute;
-            bottom: 10px;
-            right: 20px;
+            bottom: 15px;
+            right: 25px;
             font-family: 'Bungee';
             font-size: 0.8rem;
-            color: #eee;
+            color: #f0f0f0;
         }
 
         .promo-card {
@@ -95,25 +94,7 @@
             border-radius: 30px;
             text-align: center;
             border: 4px solid var(--yellow);
-            cursor: help;
-            transition: 0.3s;
-        }
-
-        .promo-card:hover { transform: scale(1.02); }
-        .promo-card:hover::before {
-            content: '67 67 67 67 67';
-            position: absolute;
-            top: -20px;
-            left: 0;
-            width: 100%;
-            font-family: 'Bungee';
-            color: var(--yellow);
-            animation: rain 1s infinite linear;
-        }
-
-        @keyframes rain {
-            from { transform: translateY(0); opacity: 1; }
-            to { transform: translateY(20px); opacity: 0; }
+            position: relative;
         }
 
         .btn { 
@@ -129,7 +110,9 @@
             margin-top: 30px; 
             border: 6px solid var(--navy);
             box-shadow: 0px 10px 0px #800000;
+            transition: 0.3s;
         }
+        .btn:hover { transform: scale(1.05); }
 
         .date-box {
             background: var(--mint);
@@ -147,18 +130,17 @@
 </head>
 <body>
 
-<div class="floating-67" style="top: 150px; left: 5%; transform: rotate(-15deg); font-size: 3rem;">67</div>
-<div class="floating-67" style="top: 400px; right: 8%; transform: rotate(20deg); font-size: 2rem;">67</div>
-<div class="floating-67" style="bottom: 200px; left: 10%; transform: rotate(10deg); font-size: 4rem;">67</div>
+<div class="floating-67" style="top: 200px; left: 5%; transform: rotate(-15deg); font-size: 3rem;">67</div>
+<div class="floating-67" style="bottom: 300px; right: 10%; transform: rotate(15deg); font-size: 4rem;">67</div>
 
 <header>
-    <h1>SUMMER VIBES</h1>
-    <div class="tagline">6TH & 7TH GRADE CAMP</div>
+    <h1>TEEN CAMP</h1>
+    <div class="tagline">6TH & 7TH GRADE</div>
 </header>
 
 <nav>
     <a href="#dates">DATES</a>
-    <a href="#pricing">DEALS</a>
+    <a href="#pricing">PRICING</a>
     <a href="#apply">JOIN!</a>
 </nav>
 
@@ -169,18 +151,21 @@
         <div class="date-box"><span>WEEK 2</span> <span>JULY 27 - 31</span></div>
         <div class="date-box"><span>WEEK 3</span> <span>AUG 3 - 7</span></div>
         <div class="date-box"><span>WEEK 4</span> <span>AUG 10 - 14</span></div>
+        <p style="text-align: center; margin-top: 20px; font-weight: bold;">Baking • Trips • Swimming • Crafts • Teen Vibes</p>
     </div>
 </section>
 
 <section id="pricing">
     <div class="card">
-        <h2 style="font-family: 'Bungee'; text-align: center;">$140 PER WEEK</h2>
+        <h2 style="font-family: 'Bungee'; text-align: center; margin-bottom: 10px;">$120 PER WEEK</h2>
+        <p style="text-align: center; margin-top: 0;">(Regular total: $480)</p>
+        
         <div class="promo-card">
-            <h3 style="font-family: 'Bungee'; color: var(--yellow); margin: 0;">🔥 THE MAGIC 67 DEAL 🔥</h3>
-            <p>Pay for all 4 weeks upfront and take off our favorite number...</p>
-            <p style="font-size: 5rem; font-family: 'Bungee'; margin: 10px 0; color: var(--white);">$493</p>
+            <h3 style="font-family: 'Bungee'; color: var(--yellow); margin: 0;">🔥 EARLY BIRD SPECIAL 🔥</h3>
+            <p>Sign up for all 4 weeks before <strong>Lag Baomer</strong> and take off our favorite number...</p>
+            <p style="font-size: 5rem; font-family: 'Bungee'; margin: 10px 0; color: var(--white);">$413</p>
             <p>(That's your <span style="color: var(--yellow); font-size: 1.5rem;">$67</span> discount!)</p>
-            <p style="font-weight: bold;">Zelle: AZloriner@gmail.com</p>
+            <p style="font-weight: bold; letter-spacing: 1px;">Zelle: AZloriner@gmail.com</p>
         </div>
     </div>
 </section>
@@ -189,8 +174,9 @@
     <div class="card" style="background: var(--yellow);">
         <h2 style="font-family: 'Bungee'; color: var(--navy); text-align: center;">READY?</h2>
         <a href="https://forms.gle/VAm8z4kLWnGEDNLq8" target="_blank" class="btn">🚀 APPLY NOW!</a>
+        
         <div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 15px; font-weight: bold; text-align: center;">
-            <div style="flex: 1; background: white; padding: 20px; border-radius: 20px; border: 3px solid var(--navy);">Aviva: 810-602-0349</div>
+            <div style="flex: 1; background: white; padding: 20px; border-radius: 20px; border: 3px solid var(--navy);">Aviva Zahava: 810-602-0349</div>
             <div style="flex: 1; background: white; padding: 20px; border-radius: 20px; border: 3px solid var(--navy);">Shani: 347-870-6566</div>
         </div>
     </div>
