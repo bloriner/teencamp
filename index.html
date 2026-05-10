@@ -8,7 +8,7 @@
     <style>
         :root { 
             --mint: #c7fae9; --navy: #1800ad; --yellow: #ffde59; --red: #ff4d4d; 
-            --white: #ffffff; --purple: #6d1ed4; --orange: #ff914d; --pink: #ff66b2;
+            --white: #ffffff; --purple: #6d1ed4; --orange: #ff914d;
         }
         
         body { 
@@ -18,16 +18,6 @@
             background: var(--mint);
             overflow-x: hidden;
             scroll-behavior: smooth;
-        }
-
-        .floating-67 {
-            position: absolute;
-            font-family: 'Bungee', cursive;
-            color: var(--pink);
-            opacity: 0.2;
-            z-index: 0;
-            user-select: none;
-            pointer-events: none;
         }
 
         header { 
@@ -75,20 +65,10 @@
             z-index: 1;
         }
 
-        .card::after {
-            content: '67';
-            position: absolute;
-            bottom: 15px;
-            right: 25px;
-            font-family: 'Bungee';
-            font-size: 0.8rem;
-            color: #f0f0f0;
-        }
-
-        .promo-card {
+        .price-display {
             background: var(--navy);
             color: white;
-            padding: 40px;
+            padding: 30px;
             border-radius: 30px;
             text-align: center;
             border: 4px solid var(--yellow);
@@ -103,13 +83,13 @@
             text-decoration: none; 
             border-radius: 100px; 
             font-family: 'Bungee', cursive;
-            font-size: 2rem; 
+            font-size: 2.2rem; 
             margin-top: 30px; 
             border: 6px solid var(--navy);
             box-shadow: 0px 10px 0px #800000;
             transition: 0.3s;
         }
-        .btn:hover { transform: scale(1.05); }
+        .btn:hover { transform: scale(1.05); background: var(--purple); box-shadow: 0px 10px 0px #4a148c;}
 
         .date-box {
             background: var(--mint);
@@ -122,13 +102,10 @@
             font-family: 'Bungee', cursive;
         }
 
-        footer { text-align: center; padding: 60px; font-family: 'Bungee', cursive; }
+        footer { text-align: center; padding: 60px; font-family: 'Bungee', cursive; font-size: 1.2rem; }
     </style>
 </head>
 <body>
-
-<div class="floating-67" style="top: 150px; left: 5%; transform: rotate(-15deg); font-size: 3rem;">67</div>
-<div class="floating-67" style="top: 450px; right: 8%; transform: rotate(10deg); font-size: 2.5rem;">67</div>
 
 <header>
     <h1>TEEN CAMP</h1>
@@ -154,22 +131,21 @@
 
 <section id="pricing">
     <div class="card">
-        <h2 style="font-family: 'Bungee'; text-align: center; margin-bottom: 10px;">$140 PER WEEK</h2>
-        <p style="text-align: center; margin-top: 0;">(Regular total: $560)</p>
-        
-        <div class="promo-card">
-            <h3 style="font-family: 'Bungee'; color: var(--yellow); margin: 0;">🔥 EARLY BIRD SPECIAL 🔥</h3>
-            <p>Sign up for all 4 weeks before <strong>Lag Baomer</strong> and take off our favorite number...</p>
-            <p style="font-size: 5rem; font-family: 'Bungee'; margin: 10px 0; color: var(--white);">$493</p>
-            <p>(That's your <span style="color: var(--yellow); font-size: 1.5rem;">$67</span> discount!)</p>
-            <p style="font-weight: bold; letter-spacing: 1px;">Zelle: avivazahavaloriner@gmail.com</p>
+        <h2 style="font-family: 'Bungee'; text-align: center; margin-bottom: 20px;">PRICING</h2>
+        <div class="price-display">
+            <p style="font-family: 'Bungee'; font-size: 3.5rem; margin: 0; color: var(--yellow);">$140</p>
+            <p style="font-size: 1.5rem; margin: 0; font-weight: bold; text-transform: uppercase;">Per Week</p>
+            <hr style="border: 1px solid var(--mint); margin: 20px auto; width: 50%;">
+            <p style="font-weight: bold; font-size: 1.1rem;">Zelle: avivazahavaloriner@gmail.com</p>
         </div>
     </div>
 </section>
 
 <section id="apply">
     <div class="card" style="background: var(--yellow);">
-        <h2 style="font-family: 'Bungee'; color: var(--navy); text-align: center;">READY?</h2>
+        <h2 style="font-family: 'Bungee'; color: var(--navy); text-align: center;">SECURE YOUR SPOT!</h2>
+        <p style="text-align: center; font-weight: bold;">Registration is open! Click below to sign up.</p>
+        
         <a href="https://forms.gle/VAm8z4kLWnGEDNLq8" target="_blank" class="btn">🚀 APPLY NOW!</a>
         
         <div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 15px; font-weight: bold; text-align: center;">
@@ -180,7 +156,7 @@
 </section>
 
 <footer>
-    🌈 67 REASONS TO JOIN US! 🌈
+    🌈 SEE YOU AT CAMP! 🌈
 </footer>
 
 </body>
